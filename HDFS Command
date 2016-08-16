@@ -1,0 +1,11 @@
+//list of all the files
+hadoop fs -ls
+//put file from local to hadoop HDFS
+hadoop fs -put purchases.txt
+hadoop fs -cat purchases.txt  //display all the content
+hadoop fs -tail purchases.txt //display the end of the file
+hadoop fs -mv purchases.txt newname.txt //rename the file
+hadoop fs -rm newname.txt //remove file
+hadoop fs -mkdir myinput  //make a new dirctroy
+hadoop fs -put purchases.txt myinput  
+hadoop fs -ls myinput //list all file in myinput directory
